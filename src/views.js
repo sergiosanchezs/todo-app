@@ -4,11 +4,11 @@ import { getTodos, removeTodo, toggleTodo } from "./todos";
 // Render application todos based on filters
 const renderTodos = () => {
   const todosEl = document.querySelector('#todos')
-  const filters = getFilters()
+  const { searchText, hideCompleted } = getFilters()
   const todos = getTodos()
   const filteredTodos = todos.filter((todo) => {
-    const searchTextMatch = todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
-    const hideCompletedMatch = !filters.hideCompleted || !todo.completed
+    const searchTextMatch = todo.text.toLowerCase().includes(searchText.toLowerCase())
+    const hideCompletedMatch = !hideCompleted || !todo.completed
     return searchTextMatch && hideCompletedMatch
   })
 
