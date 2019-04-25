@@ -1,0 +1,23 @@
+{
+  "name": "Todos-App",
+  "version": "1.0.0",
+  "description": "This is a To-Do App",
+  "main": "index.js",
+  "scripts": {
+    "dev-server": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Sergio Sanchez",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "live-server": "^1.2.1",
+    "uuid": "^3.3.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
